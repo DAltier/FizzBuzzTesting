@@ -1,0 +1,92 @@
+Boundaries testing
+
+Given: I am a user
+When: I enter the string "0"
+Then: I get back false
+
+Given: I am a user
+When: I enter the string "1" 
+Then: I get back the string "1"
+
+Given: I am a user
+When: I enter the string "300" 
+Then: I get back a string ending in "FizzBuzz"
+
+Given: I am a user
+When: I enter the string "400"
+Then: I get back false
+_____________________________
+
+1,2,3,5,6,10,15,30
+
+Given: I am a user
+When: I enter the string "1"
+Then: I get back the string "1"
+
+Given: I am a user
+When: I enter the string "2"
+Then: I get back the string "1,2"
+
+Given: I am a user
+When: I enter the string "3"
+Then: I get back a string ending in "Fizz"
+
+Given: I am a user
+When: I enter the string "5"
+Then: I get back a string ending in "Buzz"
+
+Given: I am a user
+When: I enter the string "6"
+Then: I get back a string ending in "Fizz"
+
+Given: I am a user
+When: I enter the string "10"
+Then: I get back a string ending in "Buzz"
+
+Given: I am a user
+When: I enter the string "15"
+Then: I get back a string ending in "FizzBuzz"
+
+Given: I am a user
+When: I enter the string "30"
+Then: I get back a string ending in "FizzBuzz"
+
+________________________________________________
+
+Flow class
+
+Given: I am a user
+When: I enter the string "1"
+Then: StringToIntVal.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "1"
+Then: RangeVal.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "1"
+Then: FizzBuzz.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "0"
+Then: StringToIntVal.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "0"
+Then: RangeVal.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "0"
+Then: FizzBuzz.getResult() will be called zero times
+
+Given: I am a user
+When: I enter the string "five"
+Then: StringToIntVal.getResult() will be called one time
+
+Given: I am a user
+When: I enter the string "five"
+Then: RangeVal.getResult() will be called zero times
+
+Given: I am a user
+When: I enter the string "five"
+Then: FizzBuzz.getResult() will be called zero times
