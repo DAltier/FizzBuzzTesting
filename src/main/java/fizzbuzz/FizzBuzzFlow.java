@@ -17,8 +17,9 @@ public class FizzBuzzFlow implements IFizzBuzzFlow {
 			boolean rangeValCheck = this._IRV.getResult(Integer.parseInt(s));
 			if (rangeValCheck) {			
 				this._IGFB.getResult(Integer.parseInt(s));
+				return true;
 			}
-		}
-		return true;
+		} 
+		return false;
 	}
 }
